@@ -11,7 +11,7 @@ function Inicio() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav custom-nav">
           <li className="nav-item active">
             <a className="nav-link" href="#">Explorar</a>
           </li>

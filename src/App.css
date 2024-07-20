@@ -1,1 +1,24 @@
-
+@media screen and (min-width: 1024px) {
+    .custom-nav {
+      display: flex; /* Convierte el contenedor en un contenedor flex */
+      justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+      margin: 0; /* Elimina márgenes adicionales */
+      padding: 0; /* Elimina padding si es necesario */
+    }
+  
+    .custom-nav a {
+      text-align: left; /* Alinea el texto a la izquierda dentro de los enlaces */
+      position: relative; /* Establece el contexto para el posicionamiento relativo */
+      left: 1000px; /* Mueve el enlace 1000px a la derecha desde su posición original */
+    }
+  
+    .custom-nav .nav-item {
+      margin-right: 15px; /* Ajusta el espaciado entre los elementos */
+    }
+  
+    .custom-nav .nav-item:last-child {
+      margin-right: 0; /* Opcional: elimina el margen derecho en el último ítem */
+    }
+  }
+  
+  
