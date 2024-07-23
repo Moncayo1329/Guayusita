@@ -18,7 +18,18 @@
   color: green;
 }
 
+.about{
 
+  background-color: rgb(250, 248, 248);
+  border-radius: 15px;
+  width: 48vw;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+  text-align: center;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  padding: 10px; 
+  margin-top: 100px;
+
+}
 
 
 
