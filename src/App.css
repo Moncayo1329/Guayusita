@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el box-sizing esté configurado correctamente */
+}
+
+/* Menu style */ 
+
+.navbar {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta el box-shadow */
+  background-color: aquamarine;
+  padding: 0; /* Elimina el relleno de la navbar */
+  width: 100%; /* Asegura que la navbar ocupe todo el ancho del contenedor */
+  overflow: hidden; /* Asegura que no haya desbordamientos */
+}
+
+.custom-nav a {
+  margin-left: 10px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
+}
+
+.custom-nav .nav-item {
+  margin-right: 5px; /* Ajusta el espaciado entre los elementos */
+  margin-left: 300px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
+}
+
+.custom-nav .nav-item:last-child {
+  margin-right: 0; /* Opcional: elimina el margen derecho en el último ítem */
+}
+  
+  
+  
+
 
 
 /* Nosotros Style */ 
@@ -18,16 +50,33 @@
   color: green;
 }
 
+.about1 h3{
+  color: rgb(3, 117, 3);
+}
+
+.about2 h3{
+  color: rgb(3, 117, 3);
+}
+
+.about3 h3{
+  color: rgb(3, 117, 3);
+}
+
+.about4 h3{
+  color: rgb(3, 117, 3);
+}
+
 .about1 {
 
   background-color: rgb(250, 248, 248);
   border-radius: 15px;
-  width: 48vw;
+  width: 30vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
   text-align: center;
   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
   padding: 10px; 
   margin-top: 100px;
+  display: grid;
 
 }
 
@@ -36,7 +85,7 @@
 
   background-color: rgb(250, 248, 248);
   border-radius: 15px;
-  width: 48vw;
+  width: 30vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
   text-align: center;
   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
@@ -49,7 +98,7 @@
 
   background-color: rgb(250, 248, 248);
   border-radius: 15px;
-  width: 48vw;
+  width: 30vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
   text-align: center;
   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
@@ -62,7 +111,7 @@
 
   background-color: rgb(250, 248, 248);
   border-radius: 15px;
-  width: 48vw;
+  width: 30vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
   text-align: center;
   margin: 0 auto; /* Esto centra el contenedor horizontalmente */
@@ -72,33 +121,27 @@
 }
 
 
+   /* Responsive */
 
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-    .custom-nav {
-      display: flex; /* Convierte el contenedor en un contenedor flex */
-      justify-content: flex-end; /* Alinea los elementos al final del contenedor */
-      margin: 0; /* Elimina márgenes adicionales */
-      padding: 0; /* Elimina padding si es necesario */
-    }
-  
-    .custom-nav a {
-      text-align: left; /* Alinea el texto a la izquierda dentro de los enlaces */
-      position: relative; /* Establece el contexto para el posicionamiento relativo */
-      left: 1000px; /* Mueve el enlace 1000px a la derecha desde su posición original */
-    }
-  
-    .custom-nav .nav-item {
-      margin-right: 15px; /* Ajusta el espaciado entre los elementos */
-    }
-  
-    .custom-nav .nav-item:last-child {
-      margin-right: 0; /* Opcional: elimina el margen derecho en el último ítem */
-    }
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    width: 30vw;
+    /* align-items: start; */
   }
-  
+}
+
+@media screen and (min-width: 375px) {
+  .list {
+    width: 80vw;
+    /* align-items: start; */
+  }
+}
+
+
+
+
+
+
+
 
