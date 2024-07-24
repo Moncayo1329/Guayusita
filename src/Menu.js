@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Inicio() {
-  return (
+  return ( 
+    <div>
     <nav className="navbar navbar-expand-md navbar-light bg-light">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">Guayusita</a>
@@ -20,9 +21,9 @@ function Inicio() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav custom-nav">
+        <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Explorar</a>
+            <a className="nav-link " href="#">Explorar</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Ingresar</a>
@@ -34,6 +35,7 @@ function Inicio() {
       </div>
     </div>
   </nav>
+  </div>
   );
 }
 

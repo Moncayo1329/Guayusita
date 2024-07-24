@@ -6,25 +6,52 @@
 
 /* Menu style */ 
 
+.navbar-brand{
+  margin-left: 150px;
+}
+
 .navbar {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta el box-shadow */
   background-color: aquamarine;
   padding: 0; /* Elimina el relleno de la navbar */
   width: 100%; /* Asegura que la navbar ocupe todo el ancho del contenedor */
   overflow: hidden; /* Asegura que no haya desbordamientos */
+} 
+
+
+.navbar-nav  {
+  margin-right: 80px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
 }
 
-.custom-nav a {
-  margin-left: 10px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
+.navbar-nav a {
+  margin-left: 15px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
 }
 
-.custom-nav .nav-item {
-  margin-right: 5px; /* Ajusta el espaciado entre los elementos */
-  margin-left: 300px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Ajusta el espaciado entre los elementos */
 }
 
-.custom-nav .nav-item:last-child {
-  margin-right: 0; /* Opcional: elimina el margen derecho en el último ítem */
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-nav  {
+    margin-right: 50px; /* Ajusta el margen izquierdo de los enlaces para reducir el espacio */
+  }
+  .navbar-brand {
+    margin-left: 0; /* Ajusta el margen en dispositivos pequeños */
+  }
+
+  .custom-nav {
+    margin-left: 0; /* Elimina el margen izquierdo para dispositivos pequeños */
+  }
+
+  .custom-nav .nav-item {
+    margin-right: 0; /* Elimina el margen derecho para dispositivos pequeños */
+  }
+
+  .navbar {
+    padding: 10px; /* Agrega un poco de padding para dispositivos pequeños */
+  }
 }
   
   
