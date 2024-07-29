@@ -1,16 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Ingresar from "./Pages/Ingresar";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+function Main(){
+  return(
+<BrowserRouter>
+<Link></Link>
+<Routes>
+<Route path="/" element={<App />} />
+<Route path="/pages/Ingresar" element={<Ingresar />} />
+
+
+
+
+</Routes>
+</BrowserRouter>
+  );
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Main />
   </React.StrictMode>
 );
 

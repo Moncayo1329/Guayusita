@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import  {Link}  from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -8,7 +9,7 @@ function Inicio() {
     <div>
     <nav className="navbar navbar-expand-md navbar-light bg-light">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Guayusita</a>
+      <Link to="/" className="navbar-brand">Guayusita</Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -26,7 +27,7 @@ function Inicio() {
             <a className="nav-link " href="#">Explorar</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Ingresar</a>
+            <Link to="/Ingresar" className="nav-link">Ingresar</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Crear Cuenta</a>
