@@ -1,9 +1,12 @@
 import React from "react"; 
+import Inicio from "../Menu";
 
 function Ingresar(){
 return(
 
-<div><p>Hello</p></div>
+<div>
+   <Inicio />
+</div>
 
 )
 

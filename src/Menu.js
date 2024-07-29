@@ -27,7 +27,7 @@ function Inicio() {
             <a className="nav-link " href="#">Explorar</a>
           </li>
           <li className="nav-item">
-            <Link to="/Ingresar" className="nav-link">Ingresar</Link>
+            <Link to="/pages/Ingresar" className="nav-link">Ingresar</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Crear Cuenta</a>
