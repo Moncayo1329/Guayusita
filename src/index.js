@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {Buscar} from './Explorar';
+import { Cuenta } from './Pages/Cuenta';
 
 function Main(){
   return(
@@ -17,6 +18,7 @@ function Main(){
 <Route path="/" element={<App />} />
 <Route path="/Ingresar" element={<Ingresar />} />
 <Route path="/Explorar" element={<Buscar />} />
+<Route path="/pages/Cuenta" element={<Cuenta />} />
 
 
 
