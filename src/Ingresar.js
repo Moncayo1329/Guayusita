@@ -1,5 +1,5 @@
 import React from "react"; 
-import Inicio from "../Menu";
+import {Inicio} from "./Menu";
 
 function Ingresar(){
 return(
@@ -14,4 +14,4 @@ return(
 
 }
 
-export default Ingresar;
+export  {Ingresar};

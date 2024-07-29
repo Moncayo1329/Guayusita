@@ -42,4 +42,4 @@ Los donantes pueden dejar comentarios y sugerencias para los proyectos que apoya
 
 
 
-export default About;
+export {About};

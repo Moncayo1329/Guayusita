@@ -24,10 +24,10 @@ function Inicio() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <a className="nav-link " href="#">Explorar</a>
+            <Link  to="/Explorar" className="nav-link">Explorar</Link>
           </li>
           <li className="nav-item">
-            <Link to="/pages/Ingresar" className="nav-link">Ingresar</Link>
+            <Link to="/Ingresar" className="nav-link">Ingresar</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Crear Cuenta</a>
@@ -40,6 +40,6 @@ function Inicio() {
   );
 }
 
-export default Inicio;
+export {Inicio};
 
 
