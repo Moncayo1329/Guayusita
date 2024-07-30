@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Inicio } from "../Menu";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Cuenta() {
-  const formData = {
-    nombre: "",
-    correo: "",
-    contraseña: "",
-    confirmarContraseña: "",
-  };
+  const [formData, setFormData] = useState({
+    guayusita: '',
+  });
 
-  const handleChange = () => {};
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // lógica para manejar el submit del formulario
   };
 
   return (
@@ -23,17 +27,21 @@ function Cuenta() {
       <div className="container mt-5">
         <h2>Crear Cuenta</h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="nombre" className="form-label">Nombre</label>
+        <div className="mb-3">
+        <label htmlFor="guayusita" className="form-label">Nombre</label>
+        <div className="input-group">
             <input
-              type="text"
-              className="form-control"
-              id="nombre"
-              name="nombre"
-              value={formData.nombre}
-              onChange={handleChange}
+                type="text"
+                className="form-control"
+                id="guayusita"
+                name="guayusita"
+                placeholder="guayusita.app/"
+                value={formData.guayusita}
+                onChange={handleChange}
+                aria-describedby="basic-addon3"
             />
-          </div>
+    </div>
+</div>
           <div className="mb-3">
             <label htmlFor="correo" className="form-label">Correo Electrónico</label>
             <input
