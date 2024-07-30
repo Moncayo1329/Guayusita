@@ -154,6 +154,21 @@
     background-color: green;
 
    }
+   .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group-text {
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+}
+
+.form-control {
+    flex: 1;
+    min-width: 0;
+}
 
 
    /* Responsive */

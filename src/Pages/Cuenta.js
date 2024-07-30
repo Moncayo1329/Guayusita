@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Inicio } from "../Menu";
+import './cuenta.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -30,6 +31,7 @@ function Cuenta() {
         <div className="mb-3">
         <label htmlFor="guayusita" className="form-label">Nombre</label>
         <div className="input-group">
+        <span className="input-group-text" id="basic-addon3">guayusita.app/</span>
             <input
                 type="text"
                 className="form-control"
