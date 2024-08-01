@@ -29,20 +29,14 @@ function Cuenta() {
         <h2>Crear Cuenta</h2>
         <form onSubmit={handleSubmit}>
         <div className="mb-3">
-        <label htmlFor="guayusita" className="form-label">Nombre</label>
-        <div className="input-group">
-        <span className="input-group-text" id="basic-addon3">guayusita.app/</span>
-            <input
-                type="text"
-                className="form-control"
-                id="guayusita"
-                name="guayusita"
-                placeholder="guayusita.app/"
-                value={formData.guayusita}
-                onChange={handleChange}
-                aria-describedby="basic-addon3"
-            />
-    </div>
+        <div className="home_container">
+        <section className="home_sectionInputUrl__fkP37">
+        <input type="text" className="home_inputUrl__eGFu5" value=""/>
+        <span>guayusita.app/</span>
+                </section>
+
+
+        </div>
 </div>
           <div className="mb-3">
             <label htmlFor="correo" className="form-label">Correo Electrónico</label>

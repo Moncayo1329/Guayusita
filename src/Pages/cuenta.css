@@ -14,3 +14,22 @@
     flex: 1;
     min-width: 0;
 }
+
+
+.home_sectionInputUrl__fkP37 span {
+    font-size: 16px;
+    position: absolute;
+    top: 160px;
+    left: 100px;
+
+}
+
+.home_sectionInputUrl__fkP37 .home_inputUrl__eGFu5 {
+    border-radius: 6px;
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 16px 8px 110px;
+    box-sizing: border-box;
+
+}
