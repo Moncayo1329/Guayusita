@@ -30,28 +30,37 @@ function Cuenta() {
         <form onSubmit={handleSubmit}>
         <div className="mb-3">
         <div className="home_container">
-        <section className="home_sectionInputUrl__fkP37">
-        <input type="text" className="home_inputUrl__eGFu5" value=""/>
+        <section className="home_section">
+        <input type="text" className="home_input" value=""/>
         <span>guayusita.app/</span>
                 </section>
-
-
         </div>
+
 </div>
-          <div className="mb-3">
-            <label htmlFor="correo" className="form-label">Correo Electrónico</label>
-            <input
-              type="email"
-              className="form-control"
-              id="correo"
-              name="correo"
-              value={formData.correo}
-              onChange={handleChange}
-            />
-          </div>
+
+
+
+<div className="mb-3">
+    <label htmlFor="correo" className="container mt-5"></label>
+    <section className="home_section2">
+        <input
+            placeholder="correo electronico"
+            type="email"
+            className="home_input2"
+            id="correo"
+            name="correo"
+            value={formData.correo}
+            onChange={handleChange}
+        />
+    </section>
+</div>
+
+
+
           <div className="mb-3">
             <label htmlFor="contraseña" className="form-label">Contraseña</label>
             <input
+            placeholder="correo"
               type="password"
               className="form-control"
               id="contraseña"
