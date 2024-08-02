@@ -16,6 +16,13 @@
 }
 
 
+.home_sectionInputUrl__fkP37{
+    width: 400px; /* Ajusta el ancho */
+    padding: 5px; /* Ajusta el relleno interno */
+    font-size: 25px; /* Ajusta el tamaño de la fuente */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-left: 40%;
+}
 .home_sectionInputUrl__fkP37 span {
     font-size: 16px;
     position: absolute;
